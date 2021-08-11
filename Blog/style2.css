@@ -1,0 +1,307 @@
+#profile_pic{
+    max-width: 100%;
+    max-height: 40%;
+    margin: auto;
+    object-fit: fill;
+}
+
+/*#profile_desc{
+    height: auto;
+}*/
+
+body{
+    background:black;
+}
+/*.container-blog-post{
+    display:grid;
+    width: 1200px;
+    height: 1000px;
+    grid-template-columns: 700px;
+    grid-template-rows: 250px 600px ;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd"
+    "pst pst pst pst abt abt";
+    border: 2px solid yellow;
+    background:blue;
+    margin: auto;
+    justify-content: center;
+}*/
+
+/* Small Screens Container */
+
+/*.profile_box{
+    padding: 2px 16px; 
+    text-align: center;
+    max-width: 100%;
+    height: 100%;
+}*/
+.box{
+    align-items: center;
+    /*justify-content:center;*/
+    border: 2px solid red;
+    background: #F8FA9D;
+  }
+@font-face{
+    font-family: jpFont;
+    src: url("AboveDemoRegular.ttf");
+
+}
+/* Small Screens */
+@media (max-width:600px)
+{
+    /*.container-main-page{
+        display:grid;
+        height: 100%;
+        width:70%;
+        /*grid-template-columns: 1200px;
+        grid-template-rows: 250px 600px;
+        grid-gap: 5px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd"
+        "pst pst pst pst pst pst"
+        "abt abt";
+        border: 2px solid yellow;
+        background:blue;
+        margin: auto;
+        justify-content: center;
+    }
+    .header{
+        grid-area: hd;
+        width: 99vw;
+        height: 200px;
+        margin: 5px;
+        justify-self: center;
+    }
+    .about{
+        /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        font-family: Arial;
+        text-align: center;
+        width: auto;
+        height: 100%;
+        grid-area: abt;
+        padding: 5px;
+        margin-right: 5px;
+        background: white;
+    }
+    .post{
+        /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        font-family: Arial;
+        width: auto;
+        height: 100%;
+        grid-area:pst;
+        margin-left: 5px;
+        padding: 5px;
+        background: white;
+    }
+    */
+    .container-main-page{
+        display:grid;
+        width: 100vw;
+        height: 100%;
+        /*grid-template-columns: 1200px;
+        grid-template-rows: 250px 600px;*/
+        grid-gap: 5px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd"
+        "pst pst pst pst pst pst"
+        "ft ft ft ft ft ft";
+        margin-right: 0px;
+        margin-left: 0px;
+        justify-content: center;
+        background:#e3e0e0;
+    }
+    .header{
+        grid-area: hd;
+        width: 100vw;
+        height: 100%;
+        /*margin: auto;*/
+        margin-right: 0px;
+        margin-left: 0px;
+        justify-self: center;
+        text-align: center;
+        background-image: url("gradient.jpg");
+        background-size: 100%;
+        padding: 0px;
+        font-family: jpFont, monospace;
+        font-size: 2.5em;
+        color: white;
+        text-shadow: -2px 0px 5px #000000;
+    }
+    #navigation-menu{
+        width: 100vw;
+        margin-right: 0px;
+        margin-left: 0px;
+        max-height: 70px;
+        padding: 8px;
+        background: black;
+        font-size: 0.5em;
+    }
+    .about{
+        /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        font-family: Arial;*/
+        text-align: center;
+        width: auto;
+        height: 60%;
+        grid-area: abt;
+        padding: 5px;
+        margin-right: 5px;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        visibility:hidden;
+    }
+    .footer{
+        text-align: center;
+        width: 100vw;
+        height: 20%;
+        grid-area: ft;
+        padding: 5px;
+        background: rgb(133, 34, 34);
+        border-radius: 5px;  
+    }
+    .post{
+        /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        font-family: Arial;*/
+        width: 100vw;
+        height: 100%;
+        grid-area:pst;
+        padding: 5px;
+        justify-content: center;
+        justify-self: center;
+        background: white;
+        border-radius: 5px;
+    }
+}
+/* Medium Screens Container 
+@media (min-width: 601px) and (max-width: 1500px)
+{
+    .container-main-page{
+        display:grid;
+        width: 1200px;
+        height: 100%;
+        /*grid-template-columns: 1200px;
+        grid-template-rows: 250px 600px;
+        grid-gap: 5px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd"
+        "pst pst pst pst abt abt";
+        margin: auto;
+        justify-content: center;
+        background:#e3e0e0;  
+    }
+    .header{
+        grid-area: hd;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        justify-self: center;
+        text-align: center;
+        background-image: url("gradient.jpg");
+        background-size: 100%;
+        padding: 0px;
+        font-family: jpFont, monospace;
+        font-size: 2.5em;
+        color: white;
+        text-shadow: -2px 0px 5px #000000;
+    }
+    #navigation-menu{
+        width: 100%;
+        max-height: 70px;
+        padding: 8px;
+        background: black;
+        font-size: 0.5em;
+    }
+    .about{
+        /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        font-family: Arial;
+        text-align: center;
+        width: auto;
+        height: 60%;
+        grid-area: abt;
+        padding: 5px;
+        margin-right: 5px;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+    }
+    .post{
+        width: auto;
+        height: 100%;
+        grid-area:pst;
+        margin-left: 5px;
+        padding: 5px;
+        background: white;
+        border-radius: 5px;
+    }
+}*/
+/* Large Screens Container */
+@media (min-width:601px)
+{
+    .container-main-page{
+        display:grid;
+        width: 1200px;
+        height: 100%;
+        /*grid-template-columns: 1200px;
+        grid-template-rows: 250px 600px;*/
+        grid-gap: 5px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd"
+        "pst pst pst pst abt abt";
+        margin: auto;
+        justify-content: center;
+        background:#e3e0e0;
+    }
+    .header{
+        grid-area: hd;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        justify-self: center;
+        text-align: center;
+        background-image: url("gradient.jpg");
+        background-size: 100%;
+        padding: 0px;
+        font-family: jpFont, monospace;
+        font-size: 2.5em;
+        color: white;
+        text-shadow: -2px 0px 5px #000000;
+    }
+    #navigation-menu{
+        width: 100%;
+        max-height: 70px;
+        padding: 8px;
+        background: black;
+        font-size: 0.5em;
+    }
+    .about{
+        /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        font-family: Arial;*/
+        text-align: center;
+        width: auto;
+        height: 60%;
+        grid-area: abt;
+        padding: 5px;
+        margin-right: 5px;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+
+    }
+    .post{
+        /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        font-family: Arial;*/
+        width: auto;
+        height: 100%;
+        grid-area:pst;
+        margin-left: 5px;
+        padding: 5px;
+        background: white;
+        border-radius: 5px;
+    }
+}
+
