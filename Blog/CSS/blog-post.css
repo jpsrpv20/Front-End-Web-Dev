@@ -1,0 +1,89 @@
+#profile_pic{
+    max-width: 100%;
+    max-height: 40%;
+    margin: auto;
+    object-fit: fill;
+}
+/* Small Screens */
+@media (max-width:600px)
+{
+    .container-blog-post{
+        display:grid;
+        width: 100vw;
+        height:auto;
+        grid-template-areas: 
+        "hd"
+        "pst"
+        "ft";
+        margin: auto;
+        justify-content: center;
+        background:#e3e0e0;
+        text-align: center;
+    }
+    .about{
+        display:none;
+    }
+    .post{
+        padding: 5px;
+        margin: 0px;
+        width: 100vw;
+        height: 100%;
+        grid-area:pst;
+        text-align:left;
+        justify-content: center;
+        justify-self: center;
+        background: white;
+    }
+    #returnal2{
+        text-align: center;
+    }
+    #returnal2 img{
+        width: 99vw;
+    }
+}
+/* Large Screens Container */
+@media (min-width:601px)
+{
+    .container-blog-post{
+        display:grid;
+        width: 60%;
+        height: 100%;
+        grid-gap: 5px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd"
+        "pst pst pst pst abt abt"
+        "ft ft ft ft ft ft";
+        margin: auto;
+        justify-content: center;
+        background:#e3e0e0;
+    }
+    .about{
+        text-align: center;
+        width: auto;
+        height: 60%;
+        grid-area: abt;
+        padding: 5px;
+        margin-right: 5px;
+        margin-left: 3px;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+
+    }
+    .post{
+        width: auto;
+        height: 100%;
+        grid-area:pst;
+        margin-left: 5px;
+        padding: 5px;
+        background: white;
+        border-radius: 5px;
+    }
+    #returnal2{
+        text-align: center;
+    }
+    #returnal2 img{
+        width: 70%;
+        height: 70%;
+    }
+}
+

@@ -1,0 +1,32 @@
+@media (max-width:600px)
+{
+    .container-index{
+        display:grid;
+        width: 100vw;
+        height:auto;
+        grid-template-areas: 
+        "hd"
+        "pst"
+        "ft";
+        margin: auto;
+        justify-content: center;
+        background:#e3e0e0;
+        text-align: center;
+    }
+}
+@media (min-width:601px)
+{
+    .container-index{
+        display:grid;
+        width: 60%;
+        height: 70%;
+        grid-gap: 5px;
+        grid-template-areas: 
+        "hd"
+        "pst"
+        "ft";
+        margin: auto;
+        justify-content: center;
+        background:#e3e0e0;
+    }
+}
