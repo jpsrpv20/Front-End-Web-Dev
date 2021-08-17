@@ -74,7 +74,7 @@ footer span{
         text-shadow: -2px 0px 5px #000000;
     }
     #navigation-menu{
-        width: 100%;
+        /*width: 100%;*/
         justify-items:end;
         margin: auto;
         max-height: 70px;
@@ -84,7 +84,7 @@ footer span{
     }
     .blog-posts{
         grid-area: pst;
-        width: 100%;
+        /*width: 100%;*/
         margin:auto;
         padding: 1%;
         margin-top: 0px;
@@ -114,7 +114,7 @@ footer span{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        width: 100%;
+       /* width: 100%;*/
         margin: auto;
         text-align: center;
         padding: 1%;
