@@ -11,6 +11,7 @@
 }
 body{
     margin:0px;
+    width: 100%;
     background:black;
 }
 nav {
@@ -24,7 +25,10 @@ a:hover{
     font-size:1.2em;
 }
 .social_media_region{
-    padding: 1%;
+    text-align: center;
+    padding-top:0.5%;
+    padding-bottom: 0.5%;
+    background: rgb(133, 34, 34);
 }
 #submit_button{
     background-color: black;
@@ -97,6 +101,8 @@ footer span{
     }
     .post-box{
         margin:auto;
+        min-width: 360px;
+        min-height: 420px;
         max-height: 500px;
         align-items: center;
         justify-content:center;
@@ -114,11 +120,21 @@ footer span{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-       /* width: 100%;*/
         margin: auto;
         text-align: center;
-        padding: 1%;
         padding-top: 2%;
+        background: rgb(133, 34, 34);
+        font-weight: bold;
+    }
+    .footer-blog-post{
+        grid-area:ft;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: auto;
+        text-align: center;
+        padding-top: 2%;
+        width: 100%;
         background: rgb(133, 34, 34);
         font-weight: bold;
     }
@@ -176,6 +192,8 @@ footer span{
     }
     .post-box{
         width: 30%;
+        min-width: 360px;
+        min-height: 420px;
         max-height: 500px;
         align-items: center;
         justify-content:center;
@@ -190,6 +208,18 @@ footer span{
         -o-text-overflow: ellipsis;
     }
     .footer{
+        grid-area:ft;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        padding-top: 1%;
+        background: rgb(133, 34, 34);
+        font-weight: bold;
+    }
+    .footer-blog-post{
         grid-area:ft;
         display: flex;
         flex-direction: column;
